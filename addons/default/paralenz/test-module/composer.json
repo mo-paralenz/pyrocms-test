@@ -1,0 +1,9 @@
+{
+    "name": "paralenz/test-module",
+    "type": "streams-addon",
+    "autoload": {
+        "psr-4": {
+            "Paralenz\\TestModule\\": "src/"
+        }
+    }
+}

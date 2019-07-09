@@ -1,0 +1,18 @@
+{% extends "theme::layouts/default" %}
+
+{% block content %}
+
+	{% set products = entries('catalog', 'products').paginate() %}
+
+	<h1>The Products</h1>
+
+	<ul>
+		{% for product in products %}
+			<li>
+				{{ html_link(product.route('view'), product.name) }}
+			</li>
+		{% endfor %}
+
+		{{ products.render|raw }}
+	</ul>
+{% endblock %}
