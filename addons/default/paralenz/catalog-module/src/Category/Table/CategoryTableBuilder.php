@@ -33,7 +33,8 @@ class CategoryTableBuilder extends TableBuilder {
 	protected $columns = [
 		'name',
 		'slug',
-		'product_count'
+		'product_count',
+		'it'
 	];
 
 	/**

@@ -47,6 +47,10 @@ class CatalogModuleServiceProvider extends AddonServiceProvider {
 	 * @type array|null
 	 */
 	protected $routes = [
+		'test'  => 'Paralenz\CatalogModule\Http\Controller\TestController@display',
+
+
+
 		'shop'                   => 'Paralenz\CatalogModule\Http\Controller\ProductsController@index',
 		'shop/product/{slug}'    => [
 			'as'   => 'paralenz.module.catalog::products.view',

@@ -10,7 +10,12 @@ class CategoryFormBuilder extends FormBuilder
      *
      * @var array|string
      */
-    protected $fields = [];
+    protected $fields = [
+			'product_count' => [
+				'type' => 'anomaly.field_type.integer',
+				'readonly' => true
+			]
+		];
 
     /**
      * Additional validation rules.
@@ -54,7 +59,14 @@ class CategoryFormBuilder extends FormBuilder
      *
      * @var array
      */
-    protected $sections = [];
+    protected $sections = [
+			'cat' => [
+				'view' => 'paralenz.module.catalog::products.partials.catform',
+				'fields' => [
+					'product_count'
+				]
+			]
+		];
 
     /**
      * The form assets.

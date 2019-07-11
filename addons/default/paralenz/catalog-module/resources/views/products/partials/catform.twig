@@ -1,0 +1,13 @@
+
+.<div class="card text-left">
+	<div class="card-body">
+		<h4 class="card-title">Title</h4>
+		<p class="card-text">
+		<ol>
+			{% for key, value in _context  %}
+				<li>{{ key }}: {{ dump(value) }}</li>
+			{% endfor %}
+		</ol>
+		</p>
+	</div>
+</div>

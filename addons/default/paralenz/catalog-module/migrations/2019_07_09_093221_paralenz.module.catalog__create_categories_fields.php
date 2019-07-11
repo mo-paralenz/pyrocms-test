@@ -11,7 +11,6 @@ class ParalenzModuleCatalogCreateCategoriesFields extends Migration {
 	 */
 	protected $fields = [
 		'name' => 'anomaly.field_type.text',
-		'sss' => 'anomaly.field_type.text',
 		'slug' => [
 			'type' => 'anomaly.field_type.slug',
 			'config' => [
